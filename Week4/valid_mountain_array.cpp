@@ -12,7 +12,7 @@ bool valid_mountain_array(vector<int>& arr) {
   // walk up (next elem must be greater than current elem)
   while (i < arr.size() - 1 && arr[i + 1] > arr[i]) i++;
 
-  // reach peack (check if peak is valid)
+  // reach peak (check if peak is valid)
   if (i == 0 || i == arr.size() - 1) return false;
 
   // walk down (next elem must be smaller than current elem)
